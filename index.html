@@ -29,7 +29,7 @@ async function main() {
   `;
 
   // Load fragment shader from file
-  const response = await fetch('shader.frag');
+  const response = await fetch('subfolder/shader.frag');
   const fragmentSource = await response.text();
 
   const vertexShader = compileShader(gl, gl.VERTEX_SHADER, vertexSource);
